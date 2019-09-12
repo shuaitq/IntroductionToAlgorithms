@@ -31,7 +31,7 @@
  > 提供一个现实生活的问题，其中只有最佳解才行，然后提供一个问题，其中近似最佳的一个解也足够好。
 
  最优解：计算一个点到另外一个点的最短路。  
- 近似解：计算![\\pi](https://latex.codecogs.com/svg.latex?%5Cpi)的值，只需要达到我们所需的精度就可泄了。
+ 近似解：计算![\pi](https://latex.codecogs.com/svg.latex?%5Cpi)的值，只需要达到我们所需的精度就可泄了。
 
  # 练习
 
@@ -44,3 +44,28 @@
  ## 1.2-2
 
  > 假设我们正比较插入排序与归并排序在相同机器上的实现。对规模为![n](https://latex.codecogs.com/svg.latex?n)的输入，插入排序运行![8n^2](https://latex.codecogs.com/svg.latex?8n%5E2)步，而归并排序运行![64n\lg{n}](https://latex.codecogs.com/svg.latex?64n%5Clg%7Bn%7D)步。为对哪些![n](https://latex.codecogs.com/svg.latex?n)值，插入排序优于归并排序？
+
+ ![8n^2 < 64n\lg{n}](https://latex.codecogs.com/svg.latex?8n%5E2%20%3C%2064n%5Clg%7Bn%7D)  
+ ![n^2 < 8n\lg{n}](https://latex.codecogs.com/svg.latex?n%5E2%20%3C%208n%5Clg%7Bn%7D)  
+ ![n < 8\lg{n}](https://latex.codecogs.com/svg.latex?n%20%3C%208%5Clg%7Bn%7D)  
+ ![n < \lg{n^8}](https://latex.codecogs.com/svg.latex?n%20%3C%20%5Clg%7Bn%5E8%7D)  
+ ![2^n < n^8](https://latex.codecogs.com/svg.latex?2%5En%20%3C%20n%5E8)  
+ ![\therefore 2 \leq n \leq 43](https://latex.codecogs.com/svg.latex?%5Ctherefore%202%20%5Cleq%20n%20%5Cleq%2043)
+
+ ## 1.2-3
+
+ > ![n](https://latex.codecogs.com/svg.latex?n)的最小值为何值时，运行时间为![100n^2](https://latex.codecogs.com/svg.latex?100n%5E2)的一个算法在相同机器上快于运行时间为![2^n](https://latex.codecogs.com/svg.latex?2%5En)的另一个算法
+
+ ![100n^2 < 2^n](https://latex.codecogs.com/svg.latex?100n%5E2%20%3C%202%5En)  
+ ![\therefore n \geq 15](https://latex.codecogs.com/svg.latex?%5Ctherefore%20n%20%5Cgeq%2015)
+
+ # 思考题
+
+ ## 1-1
+
+ > （运行时间的比较）假设求解问题的算法需要![f(n)](https://latex.codecogs.com/svg.latex?f%28n%29)毫秒，对下表中的每个函数![f(n)](https://latex.codecogs.com/svg.latex?f%28n%29)和时间![t](https://latex.codecogs.com/svg.latex?t)，确定可以在时间![t](https://latex.codecogs.com/svg.latex?t)内求解的问题的最大规模![n](https://latex.codecogs.com/svg.latex?n)。
+
+|  | 1秒钟 | 1分钟 | 1小时 | 1天 | 1月 | 1年 | 1世纪 |
+| ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ |
+| ![\lg{n}](https://latex.codecogs.com/svg.latex?%5Clg%7Bn%7D) |  |  ||||||
+| ![]() |  |  ||||||
