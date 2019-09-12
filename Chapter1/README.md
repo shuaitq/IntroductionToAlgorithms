@@ -43,4 +43,4 @@
 
  ## 1.2-2
 
- > 假设我们正比较插入排序与归并排序在相同机器上的实现。对规模为![n](https://latex.codecogs.com/svg.latex?n)的输入，插入排序运行![8n^2](https://latex.codecogs.com/svg.latex?8n%5E2)步，而归并排序运行![64nlgn](https://latex.codecogs.com/svg.latex?64nlgn)步。为对哪些![n](https://latex.codecogs.com/svg.latex?n)值，插入排序优于归并排序？
+ > 假设我们正比较插入排序与归并排序在相同机器上的实现。对规模为![n](https://latex.codecogs.com/svg.latex?n)的输入，插入排序运行![8n^2](https://latex.codecogs.com/svg.latex?8n%5E2)步，而归并排序运行![64n\lg{n}](https://latex.codecogs.com/svg.latex?64n%5Clg%7Bn%7D)步。为对哪些![n](https://latex.codecogs.com/svg.latex?n)值，插入排序优于归并排序？
