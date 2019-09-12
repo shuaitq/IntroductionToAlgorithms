@@ -2,6 +2,14 @@ asdfad![x!=y](https://latex.codecogs.com/svg.latex?x%21%3Dy)asdfasdf
 
 asdfasdf![x==y](https://latex.codecogs.com/svg.latex?%5Cinline%20x%3D%3Dy)adsfsafsdf
 
+测试测![x!=y](https://latex.codecogs.com/svg.latex?x%21%3Dy)试测试
+
+测试测![x==y](https://latex.codecogs.com/svg.latex?%5Cinline%20x%3D%3Dy)试测试
+
+测试![](https://latex.codecogs.com/svg.latex?%5Cinline%20%5Cbegin%7Bbmatrix%7D%20x%3D%3Dy%20%26%201%261%20%5C%5C%201%20%26%201%20%26%201%20%5Cend%7Bbmatrix%7D)测试
+
+测试测![](https://latex.codecogs.com/svg.latex?%5Cbegin%7Bbmatrix%7D%20x%3D%3Dy%20%26%201%261%20%5C%5C%201%20%26%201%20%26%201%20%5Cend%7Bbmatrix%7D)试测试
+
 # 练习
 
 ## 1.1-1
