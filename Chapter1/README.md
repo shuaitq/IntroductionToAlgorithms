@@ -1,13 +1,6 @@
-<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+asdfad![x!=y](https://latex.codecogs.com/svg.latex?x%21%3Dy)asdfasdf
 
-formula1: $$n==x$$
-
-formula2: $$n!=x$$
-
-formula5: \\(k==z\\)
-
-formula6: \\[k!=z\\]
+asdfasdf![x==y](https://latex.codecogs.com/svg.latex?%5Cinline%20x%3D%3Dy)adsfsafsdf
 
 # 练习
 
