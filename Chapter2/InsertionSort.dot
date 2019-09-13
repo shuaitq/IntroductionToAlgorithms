@@ -1,5 +1,5 @@
 digraph {
-    node [shape=box style=filled fillcolor=white];
+    node [shape=box style=filled fillcolor=white]
 
     subgraph {
         A1 [label="31" fillcolor=gray]

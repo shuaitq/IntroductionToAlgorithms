@@ -2,7 +2,7 @@
 
 ## 2.1-1
 
-> 以图2-2为模型，说明INSERTION-SORT在数组$A=<31, 41, 59, 26, 41, 58>$上的执行过程。
+> 以图2-2为模型，说明INSERTION-SORT在数组A=<31, 41, 59, 26, 41, 58>上的执行过程。
 
 ![InsertionSort.svg](https://github.com/shuaitq/IntroductionToAlgorithms/blob/master/Chapter2/InsertionSort.svg)
 
@@ -103,3 +103,8 @@ SELECTION-SORT(A)
 > 应如何修改任何一个算法，才能使之具有良好的最好情况运行时间？
 
 在运行算法之前检查一遍输入，看输入是否满足最好情况，如果是最好情况就直接返回结果。
+
+# 练习
+
+## 2.3-1
+
