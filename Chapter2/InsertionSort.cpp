@@ -1,35 +1,34 @@
 #include <cstdio>
+#include <iostream>
+#include <vector>
 
-int n = 6;
-int ni[6] = {5, 2, 4, 6, 1, 3};
+using namespace std;
 
-void print(int n, int ni[])
+vector<int> v = {5, 2, 4, 6, 1, 3};
+
+void insertion_sort(vector<int> &v)
 {
-    for(int i = 0; i < n; ++ i)
+    for(int j = 1; j < v.size(); ++ j)
     {
-        printf("%d ", ni[i]);
-    }
-    printf("\n");
-}
-
-void insertion_sort(int n, int ni[])
-{
-    for(int j = 1; j < n; ++ j)
-    {
-        int key = ni[j];
+        int key = v[j];
         int i;
-        for(i = j - 1; i >= 0 && ni[i] > key; -- i)
+        for(i = j - 1; i >= 0 && v[i] > key; -- i)
         {
-            ni[i + 1] = ni[i];
+            v[i + 1] = v[i];
         }
-        ni[i + 1] = key;
-        print(n, ni);
+        v[i + 1] = key;
     }
 }
 
 int main()
 {
-    insertion_sort(n, ni);
+    insertion_sort(v);
+
+    for(const auto &i : v)
+    {
+        cout << i << ' ';
+    }
+    cout << endl;
 
     return 0;
 }

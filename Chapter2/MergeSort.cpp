@@ -1,64 +1,62 @@
-#include <cstdio>
+#include <iostream>
+#include <vector>
 
-int n = 8;
-int ni[8] = {2, 4, 5, 7, 1, 2, 3, 6};
-int temp[8];
+using namespace std;
 
-void print(int n, int ni[])
-{
-    for(int i = 0; i < n; ++ i)
-    {
-        printf("%d ", ni[i]);
-    }
-    printf("\n");
-}
+vector<int> v = {2, 4, 5, 7, 1, 2, 3, 6};
 
-void merge(int ni[], int p, int q, int r, int temp[])
+void merge(vector<int> &v, int p, int q, int r)
 {
     int i = p, j = q + 1;
-    int k = 0;
+    vector<int> temp;
 
     while(i <= q && j <= r)
     {
-        if(ni[i] <= ni[j])
+        if(v[i] <= v[j])
         {
-            temp[k ++] = ni[i ++];
+            temp.push_back(v[i ++]);
         }
         else
         {
-            temp[k ++] = ni[j ++];
+            temp.push_back(v[j ++]);
         }
     }
 
     while(i <= q)
     {
-        temp[k ++] = ni[i ++];
+        temp.push_back(v[i ++]);
     }
     while(j <= r)
     {
-        temp[k ++] = ni[j ++];
+        temp.push_back(v[j ++]);
     }
 
-    for(int i = 0; i < k; ++ i)
+    for(int i = 0; i < temp.size(); ++ i)
     {
-        ni[p + i] = temp[i];
+        v[p + i] = temp[i];
     }
-    print(n, ni);
 }
 
-void merge_sort(int ni[], int p, int r, int temp[])
+void merge_sort(vector<int> &v, int p, int r)
 {
     if(p < r)
     {
         int q = (p + r) / 2;
-        merge_sort(ni, p, q, temp);
-        merge_sort(ni, q + 1, r, temp);
-        merge(ni, p, q, r, temp);
+        merge_sort(v, p, q);
+        merge_sort(v, q + 1, r);
+        merge(v, p, q, r);
     }
 }
 
 int main()
 {
-    merge_sort(ni, 0, n - 1, temp);
+    merge_sort(v, 0, v.size() - 1);
+
+    for(const auto &i : v)
+    {
+        cout << i << ' ';
+    }
+    cout << endl;
+
     return 0;
 }
